@@ -11,31 +11,18 @@ namespace WordCounter.Tests
     public void WordCounter_Instantiates_NewInstance()
     {
       // Arrange
-      CountWord newCountWord = new CountWord();
-      // Act
-      newCountWord.Counter("test", "this is only a test");
+      CountWord newCountWord = new CountWord("test", "this is only a test");
       // Assert
       Assert.AreEqual(typeof(CountWord), newCountWord.GetType());
     }
     [TestMethod]
-    public void CaptureUserWord_CapturesTheUsersWord_TheirWord()
+    public void CountRepeats_CountsWordsInSentence_1()
     {
       // Arrange
-      CountWord newCountWord = new CountWord();
-      // Act
-      string result = newCountWord.CaptureUserWord("word");
+      CountWord newCountWord = new CountWord("hi","hello");
       // Assert
-      Assert.AreEqual("word", result);
-    }
-    [TestMethod]
-    public void CaptureUserSentence_CapturesTheSentence_TheirSentence()
-    {
-      // Arrange
-      CountWord newCountWord = new CountWord();
-      // Act
-      string result = newCountWord.CaptureUserSentence("this is the sentence");
-      // Assert
-      Assert.AreEqual("this is the sentence", result);
+      Assert.AreEqual(1, newCountWord.CountRepeats());
+
     }
   }
 }

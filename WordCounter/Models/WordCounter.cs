@@ -7,22 +7,26 @@ namespace WordCounter.Models
     public string UserWord { get; set; }
     public string UserSentence { get; set; }
 
-    public void Counter(string userinputword, string userinputsentence)
+    public CountWord(string userinputword, string userinputsentence)
     {
       userinputword = UserWord;
       userinputsentence = UserSentence;
     }
-    
-    public string CaptureUserWord(string userinputword)
-    {
-      string result = userinputword;
-      return result;
-    }
 
-    public string CaptureUserSentence(string userinputsentence)
+    public int CountRepeats()
     {
-      string result = userinputsentence;
-      return result;
+      string userword = this.UserWord;
+      string[] wordarray = UserSentence.Split(' ');
+      int counter = 0;
+
+      foreach (string word in wordarray)
+      {
+        if (userword == word)
+        {
+          counter++;
+        }
+      }
+      return counter;
     }
   }
 
