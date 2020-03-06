@@ -10,9 +10,9 @@ This is the Epicodus independent end-of-week assignment for Friday, March 6, 202
 
 | Specification             | Input 	|     Output      |
 |-------------------------	|-------	|----------------	|
-| Program displays welcome message and asks the user for the word they want counted | Epicodus | "The word to be counted is "Epicodus." |
+| Program displays welcome message and asks the user for the word they want counted | "Epicodus" | "The word to be counted is "Epicodus." |
 |Program asks the user for a sentence | "Epicodus is a coding bootcamp." | The program then searches for the word Epicodus in the user's given sentence | 
-|Program returns how many times the word is used in the sentence | Word: Epicodus <br> Sentence: "Epicodus is a coding bootcamp" | "Epicodus is used 1 time(s) in your given sentence." |
+|Program returns message stating how many times the word is used in the sentence | Word: "Epicodus" <br> Sentence: "Epicodus is a coding bootcamp" | "Epicodus is used 1 time(s) in your given sentence." |
 
 
 ## Setup/Installation Requirements
