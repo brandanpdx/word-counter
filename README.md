@@ -10,10 +10,9 @@ This is the Epicodus independent end-of-week assignment for Friday, March 6, 202
 
 | Specification             | Input 	|     Output      |
 |-------------------------	|-------	|----------------	|
-| Program prompts welcome message, displays current prices, and the curent special | User starts program | "Welcome to Pierre's Bakery.  Bread is $5.00 per loaf.  Pastries are $2 each." TODAY'S SPECIALS: Buy 2 loaves of bread, get 1 free!  Buy 3 pastries for $5!|
-
-
-
+| Program displays welcome message and asks the user for the word they want counted | Epicodus | "The word to be counted is "Epicodus." |
+|Program asks the user for a sentence | "Epicodus is a coding bootcamp." | The program then searches for the word Epicodus in the user's given sentence | 
+|Program returns how many times the word is used in the sentence | Word: Epicodus <br> Sentence: "Epicodus is a coding bootcamp" | "Epicodus is used 1 time(s) in your given sentence." |
 
 
 ## Setup/Installation Requirements
@@ -23,7 +22,7 @@ This is the Epicodus independent end-of-week assignment for Friday, March 6, 202
 Clone this repository via Terminal using the following commands:
 * ```$ cd desktop```
 * ```$ git clone https://github.com/brandanpdx/word-counter```
-* ```$ cd bakery```
+* ```$ cd word-counter```
 
 Then, confirm that you have navigated to the word-counter project directory by entering ```pwd``` in Terminal.
 
