@@ -33,9 +33,9 @@ namespace WordCounter.Tests
       // Arrange
       CountWord newCountWord = new CountWord();
       // Act
-      string result = newCountWord.CaptureUserSentence("this is sparta");
+      string result = newCountWord.CaptureUserSentence("this is the sentence");
       // Assert
-      Assert.AreEqual("this is jef", result);
+      Assert.AreEqual("this is the sentence", result);
     }
   }
 }
