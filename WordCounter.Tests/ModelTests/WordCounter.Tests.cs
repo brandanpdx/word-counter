@@ -25,7 +25,7 @@ namespace WordCounter.Tests
       // Act
       string result = newCountWord.CaptureUserWord("string");
       // Assert
-      Assert.AreEqual("0", result);
+      Assert.AreEqual("string", result);
     }
 
   }
