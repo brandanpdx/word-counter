@@ -16,7 +16,7 @@ namespace WordCounter.Models
     public int CountRepeats()
     {
       string userword = this.UserWord;
-      string[] wordarray = UserSentence.Split(' ');
+      string[] wordarray = this.UserSentence.Split(' ');
       int counter = 0;
 
       foreach (string word in wordarray)
