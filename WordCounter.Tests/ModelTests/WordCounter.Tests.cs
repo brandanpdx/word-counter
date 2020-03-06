@@ -18,15 +18,24 @@ namespace WordCounter.Tests
       Assert.AreEqual(typeof(CountWord), newCountWord.GetType());
     }
     [TestMethod]
-    public void CaptureUserWord_CapturesTheUsersInput_TheirString()
+    public void CaptureUserWord_CapturesTheUsersWord_TheirWord()
     {
       // Arrange
       CountWord newCountWord = new CountWord();
       // Act
-      string result = newCountWord.CaptureUserWord("string");
+      string result = newCountWord.CaptureUserWord("word");
       // Assert
-      Assert.AreEqual("string", result);
+      Assert.AreEqual("word", result);
     }
-
+    [TestMethod]
+    public void CaptureUserSentence_CapturesTheSentence_TheirSentence()
+    {
+      // Arrange
+      CountWord newCountWord = new CountWord();
+      // Act
+      string result = newCountWord.CaptureUserSentence("this is sparta");
+      // Assert
+      Assert.AreEqual("this is jef", result);
+    }
   }
 }
