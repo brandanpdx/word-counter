@@ -1,6 +1,6 @@
-# _Epicodus Independent Project - March 6, 2020_
+# Epicodus Independent Project - March 6, 2020
 
-#### By _**Brandan Sayarath**_
+### Created by: Brandan Sayarath
 
 ## Description
 
@@ -17,17 +17,16 @@ This is the Epicodus independent end-of-week assignment for Friday, March 6, 202
 
 ## Setup/Installation Requirements
 
-#### Install this application
-
 Clone this repository via Terminal using the following commands:
 * ```$ cd desktop```
 * ```$ git clone https://github.com/brandanpdx/word-counter```
 * ```$ cd word-counter```
 
-Then, confirm that you have navigated to the word-counter project directory by entering ```pwd``` in Terminal.
+To run the program, navigate to the WordCounter production folder by typing the following into the terminal: 
 
-To run the program, type the following into the terminal: 
+* ```$ cd WordCounter```
 
+Then run the program by typing:
 * ```$ dotnet run```
 
 
@@ -46,5 +45,5 @@ This program was created with:
 
 This code is licensed under MIT permissive free software license
 
-Copyright (c) 2020 **_Brandan Sayarath_**
+Copyright (c) 2020 Brandan Sayarath
 
