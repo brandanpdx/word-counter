@@ -13,9 +13,10 @@ namespace WordCounter.Models
       userinputsentence = UserSentence;
     }
     
-    public static void TempMethod()
+    public string CaptureUserWord(string userinputword)
     {
-
+      string result = userinputword;
+      return result;
     }
   }
 

@@ -17,6 +17,16 @@ namespace WordCounter.Tests
       // Assert
       Assert.AreEqual(typeof(CountWord), newCountWord.GetType());
     }
+    [TestMethod]
+    public void CaptureUserWord_CapturesTheUsersInput_TheirString()
+    {
+      // Arrange
+      CountWord newCountWord = new CountWord();
+      // Act
+      string result = newCountWord.CaptureUserWord("string");
+      // Assert
+      Assert.AreEqual("0", result);
+    }
 
   }
 }
