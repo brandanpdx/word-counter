@@ -29,5 +29,4 @@ namespace WordCounter.Models
       return counter;
     }
   }
-
 }
