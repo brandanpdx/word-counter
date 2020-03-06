@@ -4,14 +4,18 @@ using System;
 
 namespace WordCounter.Tests
 {
-  //change name of test class.
   [TestClass]
-  public class ChangeNameOfClassTests
+  public class WordCounterTests
   {
     [TestMethod]
-    public void MethodName_WhatItDoes_ReturnObject()
+    public void WordCounter_Instantiates_NewInstance()
     {
-
+      // Arrange
+      CountWord newCountWord = new CountWord();
+      // Act
+      newCountWord.Counter("test", "this is only a test");
+      // Assert
+      Assert.AreEqual(typeof(CountWord), newCountWord.GetType());
     }
 
   }
