@@ -8,23 +8,21 @@ namespace WordCounter.Tests
   public class WordCounterTests
   {
     [TestMethod]
-    public void WordCounter_Instantiates_NewInstance()
+    public void CountWord_Instantiates_NewInstance()
     {
       // Arrange
       CountWord newCountWord = new CountWord("test", "this is only a test");
       // Assert
       Assert.AreEqual(typeof(CountWord), newCountWord.GetType());
     }
+
     [TestMethod]
-    public void CountRepeats_CountsWordsInSentence_1()
+    public void CountRepeat_CountsWordsInSentence_1()
     {
       // Arrange
-      CountWord newCountWord = new CountWord("hi", "hello there");
-      // Act
-      
+      CountWord newCountWord = new CountWord("eggs", "eggs are one of my favorite breakfast food yay eggs");    
       // Assert
-      Assert.AreEqual(0, newCountWord.CountRepeats());
-
+      Assert.AreEqual(2, newCountWord.CountRepeat());
     }
   }
 }

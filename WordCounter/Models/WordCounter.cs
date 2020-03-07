@@ -9,14 +9,15 @@ namespace WordCounter.Models
 
     public CountWord(string userinputword, string userinputsentence)
     {
-      userinputword = UserWord;
-      userinputsentence = UserSentence;
+      UserWord = userinputword;
+      UserSentence = userinputsentence;
     }
 
-    public int CountRepeats()
+    public int CountRepeat()
     {
       string userword = this.UserWord;
-      string[] wordarray = this.UserSentence.Split(' ');
+      string userssentences = this.UserSentence;
+      string[] wordarray = userssentences.Split(" ");
       int counter = 0;
 
       foreach (string word in wordarray)
@@ -29,4 +30,5 @@ namespace WordCounter.Models
       return counter;
     }
   }
+
 }
