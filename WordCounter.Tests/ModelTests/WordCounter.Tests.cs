@@ -14,13 +14,13 @@ namespace WordCounter.Tests
       Assert.AreEqual(typeof(CountWord), newCountWord.GetType());
     }
     [TestMethod]
-    public void CountWord_TakesInOneCharacter_A()
+    public void CountWord_TakesInOneCharacterWord_A()
     {
       CountWord newCountWord = new CountWord("a", "");
       Assert.AreEqual("a", newCountWord.UserWord);
     }
     [TestMethod]
-    public void CountWord_TakesInMultiCharacter_To()
+    public void CountWord_TakesInMultiCharacterWord_To()
     {
       CountWord newCountWord = new CountWord("to", "");
       Assert.AreEqual("to", newCountWord.UserWord);
