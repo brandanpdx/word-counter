@@ -20,7 +20,7 @@ namespace WordCounter.Tests
       Assert.AreEqual("a", newCountWord.UserWord);
     }
     [TestMethod]
-    public void CountWord_TakesInMultiCharacter_A()
+    public void CountWord_TakesInMultiCharacter_To()
     {
       CountWord newCountWord = new CountWord("to", "");
       Assert.AreEqual("to", newCountWord.UserWord);
