@@ -23,7 +23,7 @@ namespace WordCounter.Tests
     public void CountWord_TakesInMultiCharacter_A()
     {
       CountWord newCountWord = new CountWord("to", "");
-      Assert.AreEqual("t", newCountWord.UserWord);
+      Assert.AreEqual("to", newCountWord.UserWord);
     }
     [TestMethod]
     public void CountRepeat_CountsWordsInSentence_1()
