@@ -26,6 +26,12 @@ namespace WordCounter.Tests
       Assert.AreEqual("to", newCountWord.UserWord);
     }
     [TestMethod]
+    public void CountWord_TakesInSentence_HelloThere()
+    {
+      CountWord newCountWord = new CountWord("", "hello there");
+      Assert.AreEqual("hi", newCountWord.UserSentence);
+    }
+    [TestMethod]
     public void CountRepeat_CountsWordsInSentence_1()
     {
       CountWord newCountWord = new CountWord("eggs", "eggs are one of my favorite breakfast food yay eggs");    
