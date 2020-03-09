@@ -29,7 +29,7 @@ namespace WordCounter.Tests
     public void CountWord_TakesInSentence_HelloThere()
     {
       CountWord newCountWord = new CountWord("", "hello there");
-      Assert.AreEqual("hi", newCountWord.UserSentence);
+      Assert.AreEqual("hello there", newCountWord.UserSentence);
     }
     [TestMethod]
     public void CountRepeat_CountsWordsInSentence_1()
