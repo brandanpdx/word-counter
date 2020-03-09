@@ -17,7 +17,7 @@ namespace WordCounter.Tests
     public void CountWord_TakesInOneCharacter_A()
     {
       CountWord newCountWord = new CountWord("a", "");
-      Assert.AreEqual("b", newCountWord.UserWord);
+      Assert.AreEqual("a", newCountWord.UserWord);
     }
     [TestMethod]
     public void CountRepeat_CountsWordsInSentence_1()
