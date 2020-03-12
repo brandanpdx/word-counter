@@ -37,5 +37,11 @@ namespace WordCounter.Tests
       CountWord newCountWord = new CountWord("eggs", "eggs are one of my favorite breakfast food yay eggs");    
       Assert.AreEqual(2, newCountWord.CountRepeat());
     }
+    [TestMethod]
+    public void CountRepeat_CountsOnlyFullWord_2()
+    {
+      CountWord newCountWord = new CountWord("cat", "cat cathedral cat");    
+      Assert.AreEqual(1, newCountWord.CountRepeat());
+    }
   }
 }
