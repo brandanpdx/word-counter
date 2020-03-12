@@ -41,7 +41,7 @@ namespace WordCounter.Tests
     public void CountRepeat_CountsOnlyFullWord_2()
     {
       CountWord newCountWord = new CountWord("cat", "cat cathedral cat");    
-      Assert.AreEqual(1, newCountWord.CountRepeat());
+      Assert.AreEqual(2, newCountWord.CountRepeat());
     }
   }
 }
